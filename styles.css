@@ -1,0 +1,23 @@
+body {background:#0d0d0d;color:#fff;font-family:Arial;margin:0;}
+header {display:flex;justify-content:space-between;align-items:center;padding:20px;background:#1a1a1a;opacity:0;animation:fade-in 1s forwards;}
+nav a {margin-left:15px;color:#ff6a00;text-decoration:none;font-weight:bold;transition:0.3s;}
+nav a:hover {color:#ffaa55;}
+.logo {height:80px;animation:spin 6s linear infinite;}
+
+.hero {padding:100px;text-align:center;background:#111;opacity:0;animation:slide-up 1s forwards;}
+.hero h1 {font-size:60px;color:#ff6a00;}
+.cta-btn {background:#ff6a00;color:#000;padding:15px 30px;border-radius:5px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:20px;transition:0.3s;}
+.cta-btn:hover {background:#ffaa55;}
+
+.about, .service-list, .contacts-box {padding:40px;opacity:0;animation:fade-in 1.5s forwards;}
+
+.service-list li {margin:10px 0;font-size:22px;}
+
+.contact-link {display:block;color:#ff6a00;text-decoration:none;margin:5px 0;font-size:20px;transition:0.3s;}
+.contact-link:hover {color:#ffaa55;}
+
+footer {text-align:center;padding:20px;background:#1a1a1a;margin-top:40px;}
+
+@keyframes fade-in {to {opacity:1;}}
+@keyframes slide-up {from {transform:translateY(40px);opacity:0;} to {transform:translateY(0);opacity:1;}}
+@keyframes spin {from {transform:rotate(0);} to {transform:rotate(360deg);}}
